@@ -1,4 +1,4 @@
-# \<m-app\>
+# \<mi-app\>
 
 WebApp base Container
 
