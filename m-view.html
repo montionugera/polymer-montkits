@@ -3,7 +3,7 @@
 <!--<link rel="import" href="../polymer/lib/elements/dom-repeat.html">-->
 
 <!--
-`m-app`
+`mi-app`
 WebApp base Container
 
 @demo demo/index.html
@@ -23,18 +23,18 @@ WebApp base Container
 
   <script>
     /** @polymerElement */
-    class MView extends Polymer.Element {
-      static get is() { return 'm-view'; }
+    class MiView extends Polymer.Element {
+      static get is() { return 'mi-view'; }
       static get properties() {
         return {
           prop1: {
             type: String,
-            value: 'm-app'
+            value: 'mi-view'
           }
         };
       }
     }
 
-    window.customElements.define(MApp.is, MApp);
+    window.customElements.define(MiView.is, MiView);
   </script>
 </dom-module>

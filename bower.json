@@ -1,7 +1,7 @@
 {
-  "name": "m-app",
+  "name": "mi-app",
   "description": "WebApp base Container",
-  "main": "m-app.html",
+  "main": "mi-app.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0-rc.2"
   },
