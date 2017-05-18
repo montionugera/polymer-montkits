@@ -9,7 +9,7 @@
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../m-app.html">
+    <link rel="import" href="../mi-app.html">
   </head>
   <body>
 
@@ -21,7 +21,7 @@
 
     <test-fixture id="ChangedPropertyTestFixture">
       <template>
-        <m-app prop1="new-prop1"></m-app>
+        <mi-app prop1="new-prop1"></mi-app>
       </template>
     </test-fixture>
 
@@ -32,7 +32,7 @@
           var element = fixture('BasicTestFixture');
           assert.equal(element.prop1, 'mi-app');
           var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
+          var elementHeader = elementShadowRoot.querySelector('div');
           assert.equal(elementHeader.innerHTML, 'Hello mi-app!');
         });
 
@@ -41,7 +41,7 @@
           var element = fixture('ChangedPropertyTestFixture');
           assert.equal(element.prop1, 'new-prop1');
           var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
+          var elementHeader = elementShadowRoot.querySelector('div');
           assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
         });
 
