@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<!--<link rel="import" href="../polymer/lib/elements/dom-if.html">-->
+<!--<link rel="import" href="../polymer/lib/elements/dom-repeat.html">-->
+
+<!--
+`m-app`
+WebApp base Container
+
+@demo demo/index.html
+-->
+
+<dom-module id="m-view">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div>
+      View Container
+    </div>
+  </template>
+
+  <script>
+    /** @polymerElement */
+    class MView extends Polymer.Element {
+      static get is() { return 'm-view'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'm-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MApp.is, MApp);
+  </script>
+</dom-module>
